@@ -35,6 +35,7 @@ values."
      spell-checking
      syntax-checking
      version-control
+     rust
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -238,6 +239,9 @@ values."
 It is called immediately after `dotspacemacs/init'.  You are free to put almost
 any user code here.  The exception is org related code, which should be placed
 in `dotspacemacs/user-config'."
+
+  ;; Rust racer auto-completion
+  (setq-default rust-enable-racer t)
   )
 
 (defun dotspacemacs/user-config ()
