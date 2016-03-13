@@ -19,4 +19,7 @@ ln -sf $emacs13/local/* $spacemacs/private/local/
 # Link snippets
 ln -sf $emacs13/snippets/* $spacemacs/private/snippets/
 
+# Link layers
+ln -sf $emacs13/layers/* $spacemacs/private/
+
 ln -sf $emacs13/.spacemacs ~/.spacemacs
