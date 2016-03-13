@@ -1,0 +1,22 @@
+#!/bin/sh
+
+emacs13="$HOME/emacs13"
+spacemacs="$HOME/.emacs.d"
+
+if [ ! -d $emacs13 ]; then
+  echo "Installing emacs13 into $emacs13"
+  git clone https://github.com/ernestas-poskus/emacs13.git $emacs13
+fi
+
+if [ ! -d $emacs13 ]; then
+  echo "Installing spacemacs into $spacemacs"
+  git clone https://github.com/syl20bnr/spacemacs $spacemacs
+fi
+
+# Link config
+ln -sf $emacs13/config/* $spacemacs/private/local/
+
+# Link snippets
+ln -sf $emacs13/snippets/* $spacemacs/private/snippets/
+
+ln -sf $emacs13/.spacemacs ~/.spacemacs
