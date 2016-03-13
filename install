@@ -13,8 +13,8 @@ if [ ! -d $emacs13 ]; then
   git clone https://github.com/syl20bnr/spacemacs $spacemacs
 fi
 
-# Link config
-ln -sf $emacs13/config/* $spacemacs/private/local/
+# Link local
+ln -sf $emacs13/local/* $spacemacs/private/local/
 
 # Link snippets
 ln -sf $emacs13/snippets/* $spacemacs/private/snippets/
