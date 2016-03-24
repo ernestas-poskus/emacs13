@@ -38,6 +38,7 @@ values."
      rust
      go
      ruby
+     ruby-on-rails
      ansible
      )
    ;; List of additional packages that will be installed without being
