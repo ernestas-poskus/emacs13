@@ -271,6 +271,10 @@ layers configuration. You are free to put any user code."
 
   ;; Golang
   (setq gofmt-command "goimports")
+
+  ;; Auto mode
+  (add-to-list 'auto-mode-alist '("\\.bats\\'" . sh-mode))
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
