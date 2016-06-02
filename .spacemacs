@@ -268,6 +268,9 @@ layers configuration. You are free to put any user code."
 
   ;; Wakatime
   (global-wakatime-mode t)
+
+  ;; Golang
+  (setq gofmt-command "goimports")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
