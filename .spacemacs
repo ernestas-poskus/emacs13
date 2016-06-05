@@ -274,6 +274,7 @@ layers configuration. You are free to put any user code."
 
   ;; Auto mode
   (add-to-list 'auto-mode-alist '("\\.bats\\'" . sh-mode))
+  (add-to-list 'auto-mode-alist '("\\.tmpl\\'" . html-mode))
 
   )
 
