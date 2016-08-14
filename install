@@ -8,7 +8,7 @@ if [ ! -d $emacs13 ]; then
   git clone https://github.com/ernestas-poskus/emacs13.git $emacs13
 fi
 
-if [ ! -d $emacs13 ]; then
+if [ ! -d $spacemacs ]; then
   echo "Installing spacemacs into $spacemacs"
   git clone https://github.com/syl20bnr/spacemacs $spacemacs
 fi
