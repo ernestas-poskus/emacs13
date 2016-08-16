@@ -44,6 +44,7 @@ values."
      react ;; npm install -g tern eslint babel-eslint eslint-plugin-react
      html ;; HTML, S[C|A]SS, LESS support
      c-c++ ;; C/C++
+     ansible ;; Ansible-flavored YAML buffers
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
