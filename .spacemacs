@@ -38,7 +38,6 @@ values."
      ;; ----------------------------------------------------------------
      auto-completion
      ivy
-     ;; auto-completion
      ;; better-defaults
      emacs-lisp
      git
@@ -203,7 +202,7 @@ values."
    ;; (default 'cache)
    dotspacemacs-auto-save-file-location 'cache
    ;; Maximum number of rollback slots to keep in the cache. (default 5)
-   dotspacemacs-max-rollback-slots 5
+   dotspacemacs-max-rollback-slots 13
    ;; If non nil, `helm' will try to minimize the space it uses. (default nil)
    dotspacemacs-helm-resize nil
    ;; if non nil, the helm header is hidden when there is only one source.
