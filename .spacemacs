@@ -305,10 +305,7 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
-
-  ;; Rust racer auto-completion
-  (setq-default rust-enable-racer t)
-  )
+)
 
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
@@ -334,6 +331,10 @@ you should place your code here."
   ;; Auto mode
   (add-to-list 'auto-mode-alist '("\\.bats\\'" . sh-mode))
   (add-to-list 'auto-mode-alist '("\\.tmpl\\'" . html-mode))
+
+  ;; Auto-fill mode for line wrapping
+  (add-hook 'prog-mode-hook #'auto-fill-mode)
+  (add-hook 'text-mode-hook #'auto-fill-mode)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
