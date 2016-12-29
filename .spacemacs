@@ -335,6 +335,9 @@ you should place your code here."
   ;; Auto-fill mode for line wrapping
   (add-hook 'prog-mode-hook #'auto-fill-mode)
   (add-hook 'text-mode-hook #'auto-fill-mode)
+
+  ;; Rust
+  (setq rust-format-on-save t)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
