@@ -334,8 +334,6 @@ you should place your code here."
   (add-to-list 'auto-mode-alist '("\\.tmpl\\'" . html-mode))
 
   ;; Auto-fill mode for line wrapping
-  (add-hook 'prog-mode-hook #'auto-fill-mode)
-  (add-hook 'text-mode-hook #'auto-fill-mode)
 
   ;; Rust
   (setq rust-format-on-save t)
