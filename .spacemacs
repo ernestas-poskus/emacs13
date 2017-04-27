@@ -339,7 +339,7 @@ you should place your code here."
   (setq rust-format-on-save t)
 
   ;; React
-  (setq-default
+  (setq
    ;; js2-mode
    js2-basic-offset 2
    ;; web-mode
